@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACK BUTTON -->
+    <a class="back-btn " href="../home.html">← Back</a>
+
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <!-- PROFILE & ABOUT ME SECTION -->
+    <section id="about">
+        <p class="greeting">Hello! I'm Janica</p>
+        <img src="jan.jpg" alt="image" class="image">
+
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Janica Dejumo</p>
+        <p><strong>AGE:</strong> 19</p>
+        <p><strong>Location:</strong> G.Del Pilar Bulan Sorsogon</p>
+
+        <p>Who am I? I am a person who carries all the challenges that come into my life. I am someone who always
+            communicates and interacts with the people arounds me. I have always been driven by curiosity. I embrace new
+            experiences and challenges that shape my personal and academic growth. These experiences have not only
+            helped me build a strong foundation, but they have also strengthened my problem-solving, adaptability, and
+            critical thinking skills. My personality is I am friendly, patient, understanding and kind especially to the
+            people who are kind to me.
+            My goal as an IT student is to
+            improve my programming and
+            technical skills. I want to learn
+            different programming languages
+            and understand how systems and
+            software work. In the future, I
+            want to become a successful IT
+            professional who can create useful
+            and innovative technology that
+            helps people.
+        </p>
+
+        <p><strong>Education Journey:</strong>
+        <p>G. del Pilar Elementary School
+            <hr>
+        </p>
+        <p>Bulan National High School
+            <hr>
+        </p>
+        <p>Sorsogon State University Bulan Campus
+            <hr>
+        </p>
+        <p><strong>Hobbies:</strong> I enjoy exploring new things in my free time. I love outdoor adventures, I am
+            passionate about traveling, and I enjoy listening to music, which helps me relax and unwind.</p>
+        <p><strong>Favorite Quote:</strong>“I’m feeling lazy. I’ll just do it later.(even when the deadline is near.)"
+            MATATAPOS MAN YAA."</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <h3>Programming Skills</h3>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar">
+                <div class="html"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar">
+                <div class="css"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar">
+                <div class="js"></div>
+            </div>
+        </div>
+
+        <h3>Tools & Software</h3>
+        <ul>
+            <li>VS Code</li>
+            <li>Photoshop</li>
+        </ul>
+
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Problem-solving</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="project">
+        <h2>Experience / Projects</h2>
+
+        <section id="projects" class="section">
+            <h2>Java Projects Proposal Computer Programming 2</h2>
+
+            <div class="project-card">
+                <h3>Project 1: PasaLokal App</h3>
+                <p><strong>Description:</strong>
+                    PasaLokal is a user-friendly mobile application designed to help tourists in Sorsogon easily find
+                    authentic pasalubong shops. The app provides a convenient way to locate stores that offer local
+                    delicacies, handcrafted souvenirs, and other culturally significant products. By guiding visitors to
+                    small local businesses, PasaLokal not only enhances the overall travel experience but also supports
+                    community livelihoods and helps preserve the cultural identity of Sorsogon. This paper offers a
+                    brief overview of the app’s design, its key features, and its purpose in promoting tourism and
+                    strengthening local trade.
+                </p>
+                <p><strong>Tools Used:</strong> Programming Language: Java,
+                    Modeling: UML for class diagram,
+                    IDE: Eclipse
+                </p>
+            </div>
+            <img src="proj1.jpg" alt="image" class="image">
+
+            <div class="project-card">
+                <h3>Project 2: Online shopping Login Form UI</h3>
+                <p><strong>Description:</strong> Online shopping login is the process where users enter their registered
+                    email or username and password to access their personal shopping account on an e-commerce website or
+                    app. Logging in allows customers to view their saved items, track orders, manage payment methods,
+                    and enjoy a personalized shopping experience.</p>
+                <p><strong>Tools Used:</strong> Apache Netbeans IDE</p>
+            </div>
+            <img src="proj2.jpg" alt="image" class="image">
+        </section>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: janicadejumo24@email.com</p>
+        <p>Phone: 09634198151</p>
+    </section>
+
+    <section>
+        <h2>Connect with me</h2>
+        <div class="social-media">
+            <a href="https://telegram.com/neeee_kei haaa.comm" class="social-btn telegram" target="_blank">Telegram</a>
+            <a href="https://facebook.com/Janica Dejumo" class="social-btn facebook" target="_blank">Facebook</a>
+            <a href="https://instagram.com/dejnics.comm" class="social-btn instagram" target="_blank">Instagram</a>
+        </div>
+    </section>
+    <script>
+        const sections = document.querySelectorAll(".section");
+
+        function revealSlides() {
+            sections.forEach(sec => {
+                const top = sec.getBoundingClientRect().top;
+                if (top < window.innerHeight - 90) {
+                    sec.classList.add("visible");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealSlides);
+        window.onload = revealSlides;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: #000000;       /* pure black background */
+    color: #e0d0ff;                  /* soft purple-tinted white for text */
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* main container with subtle purple borders */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 3rem;
+    border-left: 2px solid #6a0dad;    /* deep purple */
+    border-right: 2px solid #6a0dad;
+    background: rgba(10, 0, 15, 0.2);  /* very deep tint, still blackish */
+    box-shadow: 0 0 40px rgba(106, 13, 173, 0.15);
+}
+
+/* headings with purple accents */
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    color: #ffffff;
+    text-shadow: 0 0 8px #b87aff, 0 0 20px #6a0dad;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #f0e6ff;
+    border-bottom: 3px solid #6a0dad;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #d9c0ff;
+    margin-bottom: 0.5rem;
+}
+
+/* links & purple details */
+a {
+    color: #c78aff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* header section */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #2a0044;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(145deg, #b388ff, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border: 2px solid #6a0dad;
+    padding: 0.4rem 1.2rem;
+    border-radius: 40px;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    gap: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.nav a {
+    color: #d3b5ff;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+}
+
+/* intro / skill */
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 4rem;
+    background: radial-gradient(circle at 0% 30%, #1a0028 0%, #000 70%);
+    padding: 2.5rem 2rem;
+    border-radius: 48px 12px 48px 12px;
+    border: 1px solid #4b1e77;
+}
+
+.skill p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    color: #cbb5ff;
+}
+
+.purple-highlight {
+    background: #6a0dad;
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    border-radius: 30px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0.5rem 0 0;
+}
+
+/* projects grid — black cards with purple outlines */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0 4rem;
+}
+
+.card {
+    background: #0c0014;      /* deep black with a hint of purple */
+    border: 2px solid #401a66;
+    border-radius: 30px 10px 30px 10px;
+    padding: 2rem 1.5rem;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.3s;
+    box-shadow: 0 10px 20px -8px rgba(128, 0, 255, 0.2);
+}
+
+.card i {
+    font-size: 2.5rem;
+    color: #b682ff;
+    margin-bottom: 1.2rem;
+}
+
+.card p {
+    color: #cfbafc;
+    margin: 1rem 0 1.2rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #2e0047;
+    color: #dbbaff;
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+    border: 1px solid #7b41b3;
+}
+
+/* about section — mix of black/purple */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 4rem 0;
+    background: #0a0011;
+    border-radius: 50px 10px 50px 10px;
+    padding: 2.5rem;
+    border: 1px solid #4d1a75;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 280px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #dcccff;
+}
+
+.picture {
+    flex: 1;
+    min-width: 200px;
+    background: #1e0030;
+    border-radius: 30px;
+    padding: 1.8rem 1.5rem;
+    border-left: 6px solid #a65eff;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+/* contact area */
+.contact {
+    background: #13001f;
+    border-radius: 40px 10px 40px 10px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border: 2px solid #5a2a9a;
+    margin-top: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 1.8rem 0 0.5rem;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.4rem;
+    background: #1f0033;
+    padding: 0.6rem 1.8rem;
+    border-radius: 60px;
+    border: 1px solid #8844dd;
+    transition: 0.2s;
+}
+
+/* footer */
+.footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: #7e62a3;
+    border-top: 2px dashed #401e5e;
+    padding-top: 2rem;
+    font-size: 0.95rem;
+}
+
+.footer i {
+    color: #b072ff;
+}
+
+/* utilities */
+.pill {
+background: #6a0dad;
+padding: 0.2rem 1rem;
+border-radius: 30px;
+color: white;
+font-weight: 500;
+}
