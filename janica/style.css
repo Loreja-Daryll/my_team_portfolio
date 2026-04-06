@@ -1,4 +1,3 @@
-/* GENERAL */
 body {
     font-family: "Courier New", Courier, monospace;
     margin: 0;
@@ -6,7 +5,7 @@ body {
     color: #FFFEFE;
 }
 
-/* BACK BUTTON */
+
 .back-btn {
     position: fixed;
     top: 20px;
@@ -17,7 +16,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -25,19 +24,18 @@ body {
     background: #0bacf7;
 }
 
-/* Images */
+
 .image {
-    width: 150px;   
+    width: 150px;
     height: auto;
     display: block;
     margin: 0 auto 15px auto;
-    border-radius: 20px; /* Fixed spacing issue */
-    border: 3px solid #A6C4D9; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    border-radius: 20px;
+    border: 3px solid #A6C4D9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 4.3s, box-shadow 4.3s;
 }
 
-/* HEADER */
 header {
     text-align: center;
     padding: 40px;
@@ -48,14 +46,14 @@ header h1 {
     font-size: 5rem;
 }
 
-/* SECTION */
+
 section {
     background: #6B93A5;
     margin: 30px auto;
     padding: 30px;
     width: 80%;
     border-radius: 25px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -66,7 +64,7 @@ h2 {
     color: #25596D;
 }
 
-/* Greeting inside image section */
+
 .greeting {
     text-align: center;
     font-size: 1.3rem;
@@ -74,7 +72,6 @@ h2 {
     font-weight: bold;
 }
 
-/* SKILL BARS */
 .skill {
     margin-bottom: 15px;
 }
@@ -90,11 +87,22 @@ h2 {
     border-radius: 20px;
 }
 
-/* Skill Percentages */
-.html { width: 45%; background: #90A9C2; }
-.css { width: 50%; background: #B197C3; }
-.js { width: 30%; background: #CFB886; }
-/* PROJECT CARDS */
+
+.html {
+    width: 45%;
+    background: #90A9C2;
+}
+
+.css {
+    width: 50%;
+    background: #B197C3;
+}
+
+.js {
+    width: 30%;
+    background: #CFB886;
+}
+
 .project {
     background: #75A0D2;
     padding: 15px;
@@ -120,10 +128,10 @@ h2 {
     display: block;
     margin: 15px auto;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* SOCIAL MEDIA BUTTON BOX STYLE */
+
 .social-media {
     text-align: center;
     margin-top: 20px;
@@ -139,23 +147,31 @@ h2 {
     font-weight: bold;
     text-decoration: none;
     color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: 0.3s ease;
 }
 
-/* Individual Colors */
-.telegram { background: #61CCEA; }
-.facebook { background: #1877F2; }
-.instagram { background: linear-gradient(45deg, #C2B78C, #ee2a7b, #6228d7); }
 
-/* Hover Effect */
+.telegram {
+    background: #61CCEA;
+}
+
+.facebook {
+    background: #1877F2;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #C2B78C, #ee2a7b, #6228d7);
+}
+
+
 .social-btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     opacity: 0.9;
 }
 
-/* FOOTER */
+
 footer {
     text-align: center;
     padding: 20px;

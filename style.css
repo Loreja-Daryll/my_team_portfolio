@@ -300,3 +300,12 @@ p {
     text-shadow: none;
     text-align: center;
 }
+
+.msg p {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.course {
+    line-height: 1.5;
+}

@@ -1,12 +1,13 @@
-
 body {
-    background-color: #0f172a; 
+    background-color: #0f172a;
     color: #e2e8f0;
     font-family: 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
 }
 
-h1, h2, h5 {
+h1,
+h2,
+h5 {
     font-weight: 700;
 }
 
@@ -15,7 +16,9 @@ h6 {
     font-size: xx-small;
 }
 
-/* NAVBAR */
+
+
+
 .navbar {
     background: linear-gradient(90deg, #0ea5e9, #2563eb);
 }
@@ -49,6 +52,7 @@ h6 {
 #sticky-links {
     transition: all 0.3s ease;
 }
+
 #sticky-links.sticky {
     position: fixed;
     top: 0;
@@ -56,16 +60,19 @@ h6 {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     z-index: 1050;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* SECTION BACKGROUND */
+
+
+
+
 .content-bg {
     background-color: #1e293b;
     padding: 40px;
     border-radius: 15px;
     margin: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .image-bg {
@@ -75,7 +82,10 @@ h6 {
     margin: 15px;
 }
 
-/* PROFILE IMAGE */
+
+
+
+
 .profile-photo {
     width: 200px;
     height: 200px;
@@ -85,7 +95,7 @@ h6 {
     box-shadow: 0 0 15px #0ea5e9;
 }
 
-.card-header {  
+.card-header {
     border-bottom: 2px solid #3e5478;
 }
 
@@ -97,12 +107,16 @@ h6 {
 
 }
 
-/* CONTACT LINKS */
+
+
+
+
 .contact {
-        border: none;
-        border-radius: 10px;
-        background-color: #1e293b;
+    border: none;
+    border-radius: 10px;
+    background-color: #1e293b;
 }
+
 .contact a {
     display: block;
     text-decoration: none;
@@ -124,14 +138,17 @@ h6 {
     padding: 5px;
 }
 
-.interests li { 
+.interests li {
     display: block;
     text-decoration: none;
     margin: 8px 0;
 }
 
 
-/* SKILLS */
+
+
+
+
 .skills-section {
     margin-top: 60px;
 }
@@ -146,26 +163,29 @@ h6 {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(14,165,233,0.4);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
 }
 
 .progress {
-        height: 14px;
-        border-radius: 50px;
-        background-color: rgba(255,255,255,0.1);
-    }
+    height: 14px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 .progress-bar {
-        background: linear-gradient(90deg, #1cc7f6cf, #1be3f98e);
-        box-shadow: 0 0 12px rgba(32, 203, 242, 0.9);
-        border-radius: 50px;
-        text-align: center;
-        color: #fdfdfd;
-        font-weight: 500;
-        line-height: 14px;
-    }
+    background: linear-gradient(90deg, #1cc7f6cf, #1be3f98e);
+    box-shadow: 0 0 12px rgba(32, 203, 242, 0.9);
+    border-radius: 50px;
+    text-align: center;
+    color: #fdfdfd;
+    font-weight: 500;
+    line-height: 14px;
+}
 
-/* PROJECTS */
+
+
+
+
 #projects {
     margin-top: 60px;
 }
@@ -188,5 +208,3 @@ h6 {
     border-radius: 10px;
     border-bottom: 3px solid #0284c7;
 }
-
-
