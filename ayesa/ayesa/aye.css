@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
-    scrollbar-color: rgb(23, 209, 255);
-    /* Prevent text selection */
     user-select: none; 
     -webkit-user-select: none;
     -ms-user-select: none;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth;  /* smooth scrolling instead of sudden jump to the target element */
+    scroll-behavior: smooth; 
 }
 
 .container {
@@ -22,18 +22,18 @@ html {
 
 .home {
     place-items: center;
-    min-height: 100vh;
 }
 
-.navbar-box {
+.header-box {
     border: 3px solid maroon;
     padding: 1px;
     border-radius: 30px;
-    width: 100%;
+    width: 98%;
     height: 60px;
+    margin-top: 10px;
 }
 
-.navbar {
+.header {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -53,6 +53,7 @@ html {
     top: 3%;
     width: 5%;
     transform: none;
+    z-index: 9999;
     border-right: 3px solid maroon;
     height: fit-content;
 }
@@ -75,7 +76,7 @@ html {
     font-size: 30px;
 }
 
-.header {
+.header-content {
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -135,7 +136,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 30px 0 30px;
+    padding: 20px 30px;
     min-height: fit-content;
     max-width: fit-content;
     gap: 10px;
@@ -189,6 +190,10 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.text .ciao {
+    margin-bottom: 15px;
+}
+
 .navlink {
     display: flex;
     background-color: maroon;
@@ -198,8 +203,8 @@ html {
     width: fit-content;
     gap: 30px;
     position: sticky;
-    top: 20px;
-    margin: -65px auto 0;
+    top: 2%;
+    margin: -38px auto 0;
     z-index: 999;   
     box-shadow: 0 12px 35px rgba(80, 69, 69, 0.63);
 }
@@ -215,12 +220,12 @@ html {
 }
 
 /* My Profile Style */
-.profile {
+.profiles {
     margin-top: 60px;
     place-items: center;
 }
 
-.profile .h3-text {
+.profiles .h3-text {
     color: maroon; 
     margin-top: 30px;
     border-bottom: 2px solid maroon;
@@ -236,85 +241,73 @@ html {
     border: 1px solid maroon;
     border-radius: 30px;
     box-shadow: 5px 5px 5px rgb(185, 173, 155);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px 130px;
+    justify-items: center;
+    padding: 20px;
     gap: 10px;
 }
 
-.profile-texts {
+.profile-contacts {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
-    gap: 31%;
-    height: fit-content;
-    border-bottom: 2px dashed wheat;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .h1-text {
-    width: fit-content;
+    width: 99%;
     color: rgb(255, 236, 196);
     text-align: left;
     padding-left: 10px;
     font-size: larger;
     font-family: cursive;
+    border-bottom: 2px dashed wheat;
 }
 
-.profile-box-1 {
+.h1-text h1 {
+    margin-bottom: 15px;
+}
+
+.my-profile, .my-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    text-align: left;
+    width: 50%;
+}
+
+
+.profile, .contact {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    min-width: fit-content;
-    height: fit-content;
-    gap: 70px;
     background-color: rgba(245, 222, 179, 0.363);
-    padding: 20px 10px 20px 10px;
-    border-radius: 8px;
+    gap: 20px;
+    padding: 20px 10px;
+    width: 100%;
+    height: auto;
 }
 
-.profile-box-1 .label {
-    background-color: wheat;
-    border-radius: 10px;
-    width: fit-content;
-    height: fit-content;
-    color: black;
-    padding: 0 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.profile {
+    border-radius: 8px 0 0 8px;
 }
 
-.profile-box-1 div section  {
-    padding: 0;
-    text-align: left;
-}
-
-.my-profile {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 45%;
-    color: white;
-    align-items: center;
-    text-align: left;
-}
-
-.my-contacts {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    width: 45%;
-    color: white;
-    align-items: center;
-    text-align: left;
+.contact {
+    border-radius: 0 8px 8px 0;
 }
 
 .label {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 236, 196);
     border-radius: 10px;
+    width: fit-content;
     height: fit-content;
     padding-left: 20px;
     color: black;
+    padding: 10px 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -322,18 +315,17 @@ html {
     font-size: 15px;
 }
 
-.profile-box-1 div .inputs{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.inputs {
+    align-content: center;
 }
 
 /* My Background Education style */
 .background {
-    width: 100%;
     text-align: center;
     margin-top: 40px;
     gap: 10px;
+    justify-items: center;
+    width: 80%;
 }
 
 .h2-text-1 {
@@ -341,10 +333,12 @@ html {
     border: 1px solid wheat;
     border-radius: 10px 10px 0 0;
     height: fit-content;
+    width: 100%;
 }
 
 .h2-text-1 {
     background-color: wheat;
+    padding: 10px 0;
 }
 
 .h2-text-1 h2 {
@@ -353,23 +347,25 @@ html {
 }
 
 .education {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));  /* width */
+    display: flex;
+    flex-direction: row;
     margin-top: 8px;
-    padding: 1%;
+    padding: 20px 0;
+    width: 100%;
     border-bottom: 2px dashed rgba(245, 222, 179, 0.363);
     border-right: 2px dashed rgba(245, 222, 179, 0.363);
     border-left: 2px dashed rgba(245, 222, 179, 0.363);
-    place-items: center;
 }
 
 .educ {
     background-color: rgba(245, 222, 179, 0.363);
-    width: fit-content;
-    height: 95%;
-    padding: 10px;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin: 0 20px;
     border-radius: 10px;
     line-height: 20px;
+    flex: 1;
 }
 
 .educ p b {
@@ -447,14 +443,14 @@ html {
     background-color: maroon;
     width: 100%;
     height: max-content;
-    padding: 1px 10px 1px 10px;
+    padding:  10px 20px;
     border-radius: 5px;
     border: 1px solid rgba(150, 144, 134, 0.507);
     color: wheat;
 }
 
 .skills-list {
-    padding: 0 20px;
+    padding: 30px 20px;
 }
 
 .skills-list ul {
@@ -481,7 +477,6 @@ html {
     position: relative;
 }
 
-/* Progress Wrap */
 .skill-bar {
     width: 85%;
     background: wheat;
@@ -492,12 +487,11 @@ html {
     border: 2px solid maroon;
 }
 
-/* Actual Bar Level */
 .skill-level {
     height: 100%;
     background: linear-gradient(90deg, rgb(177, 17, 17), maroon);
     border-radius: 10px;
-    width: var(--width);   /* Keeps the correct width */
+    width: var(--width); 
 }
 
 .percent {
@@ -519,6 +513,7 @@ html {
 .h2-text-2 {
     width: 100%;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .h2-text-2 h2 {
@@ -569,11 +564,9 @@ html {
 
 .proj-img-text {
     background-color: rgba(121, 120, 118, 0.329);
-    padding: 1px 0;
     margin-top: 15px;
     border-radius: 10px;
-    height: 130px;
-    min-height: fit-content;
+    padding: 15px 0 40px 0;
 }
 
 .proj-img-text h3 {
@@ -612,7 +605,6 @@ html {
     margin-top: 0;
 }
 
-
 .contact-list a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -633,10 +625,9 @@ footer p {
 }
 
 
-
 @media (max-width: 1024px) {
 
-    .header {
+    .header-content {
         gap: 40px;
     }
 
@@ -650,30 +641,55 @@ footer p {
 
 }
 
+@media (max-width: 900px) {
 
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        height: auto;
+    .header {
         padding: 10px;
     }
 
-    .button-box {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: auto;
-        border-right: none;
-        margin-bottom: 10px;
-    }
-
-    .header {
-        flex-direction: column;
+    .header-content {
         gap: 15px;
         width: 100%;
-        margin-left: 0;
-        border-left: none;
+        margin-left: 8%;
+        border-left: 2px solid  wheat;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 12px;
+        padding: 0 10px 0 10px;
+        line-height: 13px;
+        color: maroon;
+    }
+
+    .text .ciao {
+        margin-bottom: 15px;
+    }
+
+    .button-box {
+        position: fixed;
+        left: 4%;
+        top: 3%;
+        width: 5%;
+        transform: none;
+        z-index: 9999;
+        border-right: 3px solid maroon;
+        height: fit-content;
+    }
+
+    .button {
+        background-color:  wheat;
+        border: 2px solid maroon;
+        border-radius: 5px;
+        transform: none;
+        margin-right: 10%;
+        min-width: fit-content;
     }
 
     .search-icon {
@@ -681,24 +697,44 @@ footer p {
         margin-top: 10px;
     }
 
-    .about-me {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .text {
-        width: 100%;
-        line-height: normal;
-    }
-
-    .profile-box-1 {
+    .profile-contacts {
         flex-direction: column;
         gap: 20px;
+    }
+    
+    .profession-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prof-list {
+        justify-items: center;
+        margin-top: 30px;
+    }
+
+    .profile-texts {
+        gap: 5px;
     }
 
     .my-profile,
     .my-contacts {
         width: 100%;
+    }
+
+    .profile, .contact {
+        border-radius: 8px;
+    }
+
+    .education {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .educ {
+        height: auto;
+        flex: 1;
     }
 
     .skills {
@@ -733,8 +769,7 @@ footer p {
 
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     .intro {
         height: auto;
@@ -746,17 +781,42 @@ footer p {
     }
 
     .img-2 ul {
-        flex-direction: column;
         gap: 20px;
+    }
+
+    .img-2 ul li img {
+        width: 80px;
+        height: 80px;
     }
 
     .h2-text-2 h2 {
         font-size: 35px;
     }
 
-    .contact-list {
+    .profile-contacts {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .skill-label {
+        width: 80%;
+        justify-self: center;
+    }
+
+    .skills-list ul {
+        justify-items: center;
+    }
+
+    .skills ul li {
+        width: 70%;
+    }
+
+    .contacts {
+        border-radius: 8px;
+    }
+
+    .contact-list {
+        flex-direction: row;
     }
 
 }
