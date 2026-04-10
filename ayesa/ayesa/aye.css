@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    user-select: none; 
+    user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     padding: 0;
@@ -13,7 +13,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -59,7 +59,7 @@ html {
 }
 
 .button {
-    background-color:  wheat;
+    background-color: wheat;
     border: 2px solid maroon;
     border-radius: 5px;
     transform: none;
@@ -67,7 +67,7 @@ html {
     min-width: fit-content;
 }
 
-.button a { 
+.button a {
     text-decoration: none;
     color: maroon;
 }
@@ -87,7 +87,7 @@ html {
     color: white;
     font-family: cursive;
     margin-left: 6%;
-    border-left: 2px solid  wheat;
+    border-left: 2px solid wheat;
 }
 
 .search-icon {
@@ -205,28 +205,28 @@ html {
     position: sticky;
     top: 2%;
     margin: -38px auto 0;
-    z-index: 999;   
+    z-index: 999;
     box-shadow: 0 12px 35px rgba(80, 69, 69, 0.63);
 }
 
 .navlink a {
     text-decoration: none;
     color: maroon;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: wheat;
     padding: 5px 10px;
     border-radius: 8px;
     font-weight: bold;
 }
 
-/* My Profile Style */
+/* my Profile Style */
 .profiles {
     margin-top: 60px;
     place-items: center;
 }
 
 .profiles .h3-text {
-    color: maroon; 
+    color: maroon;
     margin-top: 30px;
     border-bottom: 2px solid maroon;
     width: 95%;
@@ -269,7 +269,8 @@ html {
     margin-bottom: 15px;
 }
 
-.my-profile, .my-contacts {
+.my-profile,
+.my-contacts {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -280,7 +281,8 @@ html {
 }
 
 
-.profile, .contact {
+.profile,
+.contact {
     display: flex;
     flex-direction: row;
     background-color: rgba(245, 222, 179, 0.363);
@@ -308,7 +310,7 @@ html {
     padding-left: 20px;
     color: black;
     padding: 10px 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .label .material-icons {
@@ -319,7 +321,7 @@ html {
     align-content: center;
 }
 
-/* My Background Education style */
+/* my Background Education style */
 .background {
     text-align: center;
     margin-top: 40px;
@@ -369,7 +371,7 @@ html {
 }
 
 .educ p b {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .educ p em {
@@ -378,7 +380,8 @@ html {
 
 .profession-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));  /* gap */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    /* gap */
     width: 95%;
     height: fit-content;
     margin-top: 60px;
@@ -398,7 +401,8 @@ html {
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));  /* width */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    /* width */
 }
 
 .prof-list ul {
@@ -417,10 +421,10 @@ html {
     padding-left: 20px;
     font-size: 20px;
     border-radius: 8px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* About Section style */
+/* about Section style */
 .about {
     place-items: center;
     margin-top: 60px;
@@ -434,7 +438,8 @@ html {
     gap: 5%;
 }
 
-.tech-skills, .personal-skills {
+.tech-skills,
+.personal-skills {
     width: 50%;
     align-items: center;
 }
@@ -443,7 +448,7 @@ html {
     background-color: maroon;
     width: 100%;
     height: max-content;
-    padding:  10px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     border: 1px solid rgba(150, 144, 134, 0.507);
     color: wheat;
@@ -455,7 +460,8 @@ html {
 
 .skills-list ul {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0px, 1fr));  /* width */;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    /* width */
     padding: 0;
     gap: 20px;
     list-style: none;
@@ -491,7 +497,7 @@ html {
     height: 100%;
     background: linear-gradient(90deg, rgb(177, 17, 17), maroon);
     border-radius: 10px;
-    width: var(--width); 
+    width: var(--width);
 }
 
 .percent {
@@ -530,7 +536,8 @@ html {
 
 .projects-list ul {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));  /* number of columns, width, equal space */;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    /* number of columns, width, equal space */
     text-align: center;
     padding: 0;
     gap: 65px;
@@ -552,8 +559,10 @@ html {
     border-bottom: 1px solid maroon;
     border-right: 1px solid maroon;
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
     text-align: center;
 }
 
@@ -582,7 +591,7 @@ html {
     padding: 0 10px;
 }
 
-/* My Contacts style */
+/* my Contacts style */
 .contacts {
     display: flex;
     flex-direction: column;
@@ -621,10 +630,10 @@ footer p {
     color: maroon;
     font-size: smaller;
     margin-top: 10px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+/*for responsiveness in mobile view*/
 @media (max-width: 1024px) {
 
     .header-content {
@@ -651,7 +660,7 @@ footer p {
         gap: 15px;
         width: 100%;
         margin-left: 8%;
-        border-left: 2px solid  wheat;
+        border-left: 2px solid wheat;
     }
 
     .about-me {
@@ -684,7 +693,7 @@ footer p {
     }
 
     .button {
-        background-color:  wheat;
+        background-color: wheat;
         border: 2px solid maroon;
         border-radius: 5px;
         transform: none;
@@ -701,7 +710,7 @@ footer p {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .profession-box {
         display: flex;
         flex-direction: column;
@@ -721,7 +730,8 @@ footer p {
         width: 100%;
     }
 
-    .profile, .contact {
+    .profile,
+    .contact {
         border-radius: 8px;
     }
 
@@ -819,4 +829,39 @@ footer p {
         flex-direction: row;
     }
 
+}
+
+
+/*this is the field for the crystal particles*/
+.crystal {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1px;
+    pointer-events: none;
+    /*para dire pansinon san brower ang particles*/
+    transform: rotate(45deg);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    filter: drop-shadow(0 0 4px #00e5ff) drop-shadow(0 0 8px #ffffff);
+    /*filter para sa glow*/
+    animation: crystalGlow 1s linear forwards;
+    z-index: 9999;
+    /* para sure na nasa ibabaw ang particles */
+}
+
+/*amo yaa ang buhay san particles sa*/
+@keyframes crystalGlow {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) scale(0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: rotate(45deg) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(180deg) translateY(50px) scale(0.2);
+    }
 }

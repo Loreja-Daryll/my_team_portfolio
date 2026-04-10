@@ -9,14 +9,17 @@
 </head>
 
 <body>
+
     <div class="container">
-        <!-- Header with portfolio logo + nav -->
+        <!-- Header with back button -->
         <div class="header">
             <div class="logo">
                 <a href="../home.html" style="font-weight: 700;">
                     <i class="fas fa-moon" style="color: #b585ff; margin-right: 8px;"></i>Portfolio
                 </a>
             </div>
+
+            <!--navigation section-->
             <div class="nav">
                 <a href="#about">About Me</a>
                 <a href="#skill">Skills</a>
@@ -25,7 +28,7 @@
             </div>
         </div>
 
-        <!-- About section -->
+        <!-- about section -->
         <div class="about" id="about">
             <div class="about-text">
                 <h2 style="border-bottom-color: #9147ff; display: block;">About Me</h2>
@@ -43,7 +46,7 @@
             </div>
         </div>
 
-        <!-- Skills Section -->
+        <!-- skills Section -->
         <div class="skill" id="skill">
             <h1>Skills</h1>
             <p>Programming Skills</p>
@@ -56,7 +59,7 @@
                 Ethics and Professionalism, Communication, Interpersonal and Emotional Intelligence</span>
         </div>
 
-        <!-- Projects Section    -->
+        <!-- projects Section    -->
         <h2><i class="fas fa-th-large" style="margin-right: 12px;" id="project"></i>Featured Projects</h2>
         <div class="projects-grid">
             <!-- card 01 -->
@@ -86,7 +89,7 @@
             </div>
         </div>
 
-        <!-- Contact Section -->
+        <!-- contact Section -->
         <div class="contact" id="contact">
             <h2 style="border-bottom: none; display: block; text-shadow: 0 0 6px #c28eff;">For Contacts</h2>
             <div class="contact-links">
@@ -106,6 +109,30 @@
                 Reserved </p>
         </div>
     </div>
+
+    <script>
+        window.onmousemove = (e) => {
+            // amo yaa ang nag hihimo san particles
+            let crystal = document.createElement('i');
+
+            // tapos amo yaa ang position sa irarum sa cursor
+            crystal.style.left = e.pageX + 'px';
+            crystal.style.top = e.pageY + 'px';
+
+            // ang siza yaa naka random para magical talaga ang size niya between 2px and 14px
+            let size = Math.random() * 12 + 2;
+            crystal.style.width = size + 'px';
+            crystal.style.height = size + 'px';
+
+            // indadagdag lng yaa for the particle effect
+            document.body.appendChild(crystal);
+
+            // amo ang reason why after san 1 second mawawara ang nauna mag luwas na particles
+            setTimeout(() => {
+                crystal.remove();
+            }, 1000);
+        };
+    </script>
 </body>
 
 </html>

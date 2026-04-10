@@ -144,3 +144,43 @@ a:hover {
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
+
+/*this is the field for the crystal particles po*/
+i {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1px; /* Bahagyang bilugan */
+    pointer-events: none;
+    transform: rotate(45deg); /* shape niya kaya parang diamond */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* light for glow*/
+
+    /* para maing magical ang animation effect lng yaa */
+    filter: drop-shadow(0 0 4px #00e5ff) drop-shadow(0 0 8px #ffffff);
+
+    /* tapos ang animation para mawara siya after san 1s */
+    animation: crystalGlow 1s linear forwards;
+}
+
+/* amo yaa ang animation ma shine tapos ma fadeout the ma fall */
+@keyframes crystalGlow {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) scale(0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: rotate(45deg) scale(1);
+    }
+
+    30% {
+        /* filter yaa parang nag babago ang glow para astig */
+        filter: drop-shadow(0 0 10px #00e5ff) drop-shadow(0 0 15px #ffffff);
+    }
+
+    100% {
+        opacity: 0;
+        /* mafall muna dito tapos maikot siya bago mawara */
+        transform: rotate(180deg) translateY(50px) scale(0.2);
+    }
+}

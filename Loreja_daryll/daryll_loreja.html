@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daryll Portfolio</title>
+    <!--used boostrap for responsiveness-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--another css for cutomazation-->
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+    
+    <!--this is for the back button-->
     <nav class="navbar bg-body-tertiary d-flex align-items-center justify-content-between px-3" id="main-navbar">
         <div class="d-flex align-items-center">
             <a class="nav-back me-2" href="../home.html">↩</a>
@@ -21,6 +25,7 @@
             </a>
         </div>
 
+        <!--unorder list for the navigation link-->
         <ul class="nav" id="sticky-links">
             <li class="nav-item">
                 <a class="nav-link active" href="#about-me">ABOUT ME</a>
@@ -37,6 +42,7 @@
         </ul>
     </nav>
 
+    <!--abuot me fields-->
     <div id="about-me" class="container-fluid text-center">
         <div class="row align-items-start">
             <div class="col content-bg">
@@ -100,11 +106,14 @@
                 </div>
 
             </div>
+
+            <!--profile section-->
             <div class="col image-bg">
                 <img src="1717048540259.jpg" class="profile-photo" alt="profile">
                 <h1>DARYLL LOREJA</h1>
                 <hr>
 
+                <!--contact ang interests section-->
                 <div id="contact" class="contact">
                     <h2>Contact Information</h2>
                     <div class="contactlence">
@@ -127,6 +136,7 @@
                 </ul>
             </div>
 
+
             <div id="exper" class="container">
                 <div id="exper" class="col content-bg">
                     <h1>Experience</h1>
@@ -143,6 +153,7 @@
             </div>
         </div>
 
+        <!--skills card with progress bar-->
         <div id="skills" class="container skills-section text-center">
             <div class="row">
                 <h2 class="mb-4">Skills</h2>
@@ -168,7 +179,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Tools &amp; Software</h5>
+                            <h5 class="card-title">Tools &amp; Software</h5> <!--use &amp; for the simble "&"-->
                             <div class="progress mb-2">
                                 <div class="progress-bar" role="progressbar" style="width:80%;">VS Code</div>
                             </div>
@@ -184,6 +195,7 @@
                     </div>
                 </div>
 
+                <!--no progess-bar-->
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
@@ -198,6 +210,7 @@
             </div>
         </div>
 
+        <!--projects card & section-->
         <div id="projects" class="container">
             <h2>Projects</h2>
             <hr>
@@ -247,16 +260,41 @@
     </div>
 
     <script>
+
+        // para mag stay ang navbar sa taas even mag scroll
         const links = document.getElementById('sticky-links');
         const offsetTop = links.offsetTop;
 
+        // para sa smoot na pag scroll pag in gamit ang navbar
         window.addEventListener('scroll', () => {
             if (window.scrollY > offsetTop) {
                 links.classList.add('sticky');
-            } else {
+            } else { // then remove the background pag nag scroll na
                 links.classList.remove('sticky');
             }
         });
+
+        window.onmousemove = (e) => {
+            // amo yaa ang nag hihimo san particles
+            let crystal = document.createElement('i');
+
+            // tapos amo yaa ang position sa irarum sa cursor
+            crystal.style.left = e.pageX + 'px';
+            crystal.style.top = e.pageY + 'px';
+
+            // ang siza yaa naka random para magical talaga ang size niya between 2px and 14px
+            let size = Math.random() * 12 + 2;
+            crystal.style.width = size + 'px';
+            crystal.style.height = size + 'px';
+
+            // indadagdag lng yaa for the particle effect
+            document.body.appendChild(crystal);
+
+            // amo ang reason why after san 1 second mawawara ang nauna mag luwas na particles
+            setTimeout(() => {
+                crystal.remove();
+            }, 1000);
+        };
     </script>
 </body>
 

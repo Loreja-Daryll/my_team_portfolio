@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- page specific tweaks -->
 
 </head>
 
@@ -32,6 +31,7 @@
         </div>
     </header>
 
+    <!--container card field-->
     <main class="middle-section" id="main">
         <p class="title">Meet the minds behind our projects</p>
         <br>
@@ -107,6 +107,31 @@
             </a>
         </div>
     </main>
+
+    <script>
+        window.onmousemove = (e) => {
+            // amo yaa ang nag hihimo san particles
+            let crystal = document.createElement('i');
+
+            // tapos amo yaa ang position sa irarum sa cursor
+            crystal.style.left = e.pageX + 'px';
+            crystal.style.top = e.pageY + 'px';
+
+            // ang siza yaa naka random para magical talaga ang size niya between 2px and 14px
+            let size = Math.random() * 12 + 2;
+            crystal.style.width = size + 'px';
+            crystal.style.height = size + 'px';
+
+            // indadagdag lng yaa for the particle effect
+            document.body.appendChild(crystal);
+
+            // amo ang reason why after san 1 second mawawara ang nauna mag luwas na particles
+            setTimeout(() => {
+                crystal.remove();
+            }, 1000);
+        };
+    </script>
+
 </body>
 
 </html>
