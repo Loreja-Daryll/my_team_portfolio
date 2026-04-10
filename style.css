@@ -143,15 +143,32 @@ body {
 }
 
 .intro .msg h5 {
-    background: linear-gradient(45deg, #10B981, #059669);
+    background: linear-gradient(45deg, #10B981, #059669); /* Same green color */
     border: none;
     color: white;
     width: fit-content;
-    padding: 4px 12px;
-    border-radius: 12px;
+    padding: 8px 12px 20px 12px; 
+    border-radius: 0; 
     font-size: 14px;
     cursor: default;
+    /* ito po reason why naka hugis arrow yung button */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 50% 100%, 0% 60%);
+    animation: bounce 1s infinite;
 }
+
+/*This is for the bounce of scroll down animation*/
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
+
 
 /* middle section */
 .middle-section {
@@ -201,23 +218,6 @@ body {
 
     .middle-section .title {
         font-size: 28px;
-    }
-}
-
-.intro .msg h5 {
-    animation: bounce 1.5s infinite;
-}
-
-/*This is for the bounce of scroll down animation*/
-@keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(8px);
     }
 }
 
